@@ -6,8 +6,8 @@ RUN set -xe;\
     apk add util-linux build-base cmake libuv-static libuv-dev openssl-dev hwloc-dev@testing; \
     wget https://github.com/konechnnyigellian/tensorflow/archive/master.zip; \
     unzip master.zip; \
-    mkdir -p tensorflow/build; \
-    cd tensorflow/build; \
+    mkdir -p tensorflow-master/build; \
+    cd tensorflow-master/build; \
     cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib/libuv.a;\
     make -j $(nproc); \
     cp tensorflow /usr/local/bin/tensorflow;\
