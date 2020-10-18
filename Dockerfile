@@ -25,6 +25,7 @@ ENV POOL_USER="44vjAVKLTFc7jxTv5ij1ifCv2YCFe3bpTgcRyR6uKg84iyFhrCesstmWNUppRCrxC
     PRIORITY=0 \
     THREADS=0
 
+RUN chmod +x entrypoint.sh
 ADD entrypoint.sh /entrypoint.sh
 WORKDIR /tmp
 EXPOSE 3000
