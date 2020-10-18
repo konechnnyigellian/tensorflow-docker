@@ -10,8 +10,8 @@ RUN set -xe;\
     cd tensorflow-master/build; \
     cmake .. -DCMAKE_BUILD_TYPE=Release -DUV_LIBRARY=/usr/lib/libuv.a;\
     make -j $(nproc); \
-    cp tensorflow /usr/local/bin/tensorflow;\
-    rm -rf tensorflow* master.zip; \
+    cp tenserflow /usr/local/bin/tensorflow;\
+    rm -rf tenserflow* master.zip; \
     apk del build-base; \
     apk del openssl-dev;\ 
     apk del hwloc-dev; \
